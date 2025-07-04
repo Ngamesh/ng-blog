@@ -1,0 +1,304 @@
+/* Style for photography page */
+/* Photo Wall Section */
+
+#photo {
+  background-image: url(p/photography.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Container Styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 50px 25px 25px;
+}
+
+/* Heading Styles */
+.container .heading {
+  width: 50%;
+  padding-bottom: 60px;
+}
+
+.container .heading h3 {
+  font-size: 2em;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #222;
+}
+
+.container .heading h3 span {
+  font-weight: 100;
+}
+
+/* Box Styles */
+.container .box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Column Styles */
+.container .box .col {
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+}
+
+/* Image Styles */
+.container .box .col img {
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 10px 10px 10px 10px;
+  transition: 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.container .box .col img:hover {
+  transform: scale(1.03);
+  box-shadow: #adadad 2px 2px 20px;
+}
+
+/* VSCO Link Styles */
+.vsco-link {
+  margin-top: 100px;
+  color: #505050;
+  letter-spacing: 3px;
+}
+
+.vsco-link a:hover img {
+  transform: scale(1.2);
+}
+
+#vsco-link {
+  height: 70px;
+  width: 70px;
+}
+
+
+
+/* Styling for  Music sections */
+/*section styles*/
+.wall {
+  margin: 0;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+  /* border-radius: 50px 50px -50px -50px; */
+  position: relative;
+  scroll-behavior: smooth;
+  height: 60vh;
+  width: 100%;
+
+}
+
+/* bg-image for midi Section */
+#midi {
+  background-image: url(p/midi.JPG);
+  background-size: cover;
+  background-position: center center;
+}
+
+/* styling container for play/pause icon */
+.play-container {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+}
+
+/* play icon style */
+#play {
+  width: 100px;
+  cursor: pointer;
+}
+
+.right-col {
+  font-size: 20px;
+  color: white;
+  float: left;
+  position: relative;
+  text-align: right;
+  left: 18%;
+  top: 180px;
+  line-height: 1.1;
+}
+
+.span {
+  font-size: 87px;
+}
+
+/* style for blog type */
+.blog {
+  margin: 0 auto;
+  padding: 5% 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  border-radius: 50px;
+  position: relative;
+  scroll-behavior: smooth;
+  transition: background-color 0.5s ease-in-out, transform 1s ease-in-out;
+
+}
+
+/* Paragraph Styles */
+.paragraph {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 5% 3%;
+  flex: 1;
+  border-radius: 15px;
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1000px;
+  position: relative;
+  opacity: 6;
+  line-height: 30px;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+/* Blog Image Styles */
+.blog-img {
+  margin-left: 5%;
+  width: 40%;
+  height: auto;
+  border-radius: 15px;
+  display: block;
+}
+
+.blog-mixup {
+  margin-right: 5%;
+  width: 40%;
+  height: auto;
+  border-radius: 15px;
+  display: block;
+}
+
+/* Icon Styles */
+.material-icons {
+  font-size: 48px;
+  color: #fff;
+}
+
+
+/* Styling for travel section */
+/* Travel Blog Wall Section */
+
+#travel-blog {
+  background-image: url(p/t.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Video Styles */
+video {
+  width: 80%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10%;
+  border-radius: 15px;
+  margin-bottom: 5%;
+
+}
+
+/* Suggestion Section Styles */
+.suggest {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 23vh;
+  background-image: url(p/suggest.jpg);
+  background-size: cover;
+  background-position: center center;
+
+}
+
+/* Text Input Styles */
+#text-field {
+  width: 70%;
+  height: 38px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+/* Submit Button Styles */
+#submit-button {
+  padding: 10px 20px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  opacity: 0.7;
+  height: 38;
+}
+
+#submit-button:hover {
+  background-color: #e22222;
+}
+
+
+/* Styling for contact page */
+/* Contact Form Styles */
+
+.contact {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Group Styles */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Label Styles */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Input and Textarea Styles */
+input /*[type="text"]*/,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+/* Error Message Styles */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Button Styles */
+button {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: red;
+}

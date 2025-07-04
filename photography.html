@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography</title>
+    <link rel="stylesheet" href="ng.css">
+    <link rel="stylesheet" href="blog.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <a href="index.html" class="logo">Ng</a>
+        <!-- Navigation Links -->
+        <nav class="top-nav" id="myTopnav">
+            <ul class="nav-links">
+                <li><a href="index.html">Me</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="#" class="active-nav">Photography</a></li>
+                <li><a href="travel.html">Travel</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Photo Wall Section -->
+    <section id="photo" class="wall"></section>
+
+    <!-- Photography Section -->
+    <section class="image-gallery">
+        <div class="container">
+            <div class="heading">
+                <!-- Heading for Photography Section -->
+                <h3>Ng's <span>Photography</span></h3>
+            </div>
+            <div class="box">
+                <div class="col">
+                    <!-- Displaying Images -->
+                    <img src="p/1.jpg" alt=""></img>
+                    <img src="p/3.jpg" alt=""></img>
+                    <img src="p/30.JPG" alt=""></img>
+                    <img src="p/16.JPG" alt=""></img>
+                    <img src="p/17.JPG" alt=""></img>
+                    <!-- VSCO Link -->
+                    <div class="vsco-link">
+                        <h3> Follow me on <br>
+                            <h2>VSCO </h2>
+                        </h3> <br> <a href="https://vsco.co/ngamesh/gallery" target="_blank">
+                            <img src="p/vsco.png" alt="VSCO" id="vsco-link" title="VSCO - Ngamesh">
+                        </a>
+                    </div>
+
+                </div>
+                <div class="col">
+                    <!-- Displaying Images -->
+                    <img src="p/26.JPG" alt=""></img>
+                    <img src="p/19.jpg" alt=""></img>
+                    <img src="p/9.jpg" alt=""></img>
+                    <img src="p/14.JPG" alt=""></img>
+                </div>
+                <div class="col">
+                    <!-- Displaying Images -->
+                    <img src="p/27.JPG" alt=""></img>
+                    <img src="p/18.JPG" alt=""></img>
+                    <img src="p/55.JPG" alt=""></img>
+                    <img src="p/5.JPG" alt=""></img>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- script for color change in navbar while scrolling -->
+    <script>
+        const header = document.querySelector('header');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 0) {
+                header.classList.add('scroll');
+            } else {
+                header.classList.remove('scroll');
+            }
+        });
+    </script>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p> &copy; Ngamesh Raj Bhandari 2023</p>
+    </footer>
+
+</body>
+
+</html>

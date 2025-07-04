@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="ng.css">
+    <link rel="stylesheet" href="blog.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <a href="index.html" class="logo">Ng</a>
+        <!-- Navigation Links -->
+        <nav class="top-nav" id="myTopnav">
+            <ul class="nav-links">
+                <li><a href="index.html">Me</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="photography.html">Photography</a></li>
+                <li><a href="travel.html">Travel</a></li>
+                <li><a href="#" class="active-nav">Contact</a></li>
+
+
+            </ul>
+        </nav>
+    </header>
+    <!-- Thank You Section -->
+    <section class="blog">
+        <div class="paragraph">
+            <h1>Thank you!</h1><br>
+            Feel free to reach out to me through the provided contact form, and I'm genuinely excited to connect with
+            you! Whether you have questions, ideas to share, or just want to say hello, I'm here to listen and engage in
+            meaningful conversations. You can use the user-friendly contact form above to send me a message, and I'll
+            make sure to respond as promptly as possible. Your thoughts and inquiries are highly valued, and I'm looking
+            forward to building connections and collaborating with you. Let's start a dialogue and explore the
+            possibilities together!
+            <br>
+            Here are some of the link you can reach me through.
+        </div>
+
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-box">
+        <div class="contact">
+            <h2>Contact me</h2> <br>
+            <form id="contactForm" action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <div class="error" id="nameError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error" id="emailError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <div class="error" id="messageError"></div>
+                </div>
+
+                <button type="submit">Submit</button>
+                <div class="submission-status" id="submissionStatus"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Icons Section -->
+    <section id="contact" class="contact-icons">
+        Here are some of the link you can reach me through.
+        <div class="social-icons">
+            <!-- Social Media Links -->
+            <a href="https://www.youtube.com/channel/UC5M3AwSNxt90AfF_KtpedlA" target="_blank">
+                <img src="p/ytb.png" alt="Youtube" id="yt" title="YouTube - Ngamesh Raj Bhandari">
+            </a>
+            <a href="https://www.instagram.com/ngameshb/" target="_blank">
+                <img src="p/insta.png" alt="Instagram" id="insta" title="Instagram - Ng">
+            </a>
+            <a href="https://vsco.co/ngamesh/gallery" target="_blank">
+                <img src="p/vsco.png" alt="VSCO" id="vsco" title="VSCO - Ngamesh">
+            </a>
+        </div>
+    </section>
+
+
+    <!-- JavaScript for Form Validation -->
+    <script>
+        const form = document.getElementById('contactForm');
+        const nameInput = document.getElementById('name');
+        const emailInput = document.getElementById('email');
+        const messageInput = document.getElementById('message');
+        const submissionStatus = document.getElementById('submissionStatus');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent default form submission
+
+            let isValid = true;
+            submissionStatus.textContent = ''; // Clear previous submission status
+
+            if (!/^[a-zA-Z\s]+$/.test(nameInput.value.trim())) {
+                document.getElementById('nameError').textContent = 'Name must contain only letters';
+                isValid = false;
+            } else {
+                document.getElementById('nameError').textContent = '';
+            }
+
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value.trim())) {
+                document.getElementById('emailError').textContent = 'Invalid email format';
+                isValid = false;
+            } else {
+                document.getElementById('emailError').textContent = '';
+            }
+
+            if (messageInput.value.trim() === '') {
+                document.getElementById('messageError').textContent = 'Message is required';
+                isValid = false;
+            } else {
+                document.getElementById('messageError').textContent = '';
+            }
+
+            if (isValid) {
+                submissionStatus.textContent = 'Form submitted successfully!';
+            }
+        });
+    </script>
+    <!-- JavaScript for Navbar Scroll Effect -->
+    <script>
+        const header = document.querySelector('header');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 0) {
+                header.classList.add('scroll');
+            } else {
+                header.classList.remove('scroll');
+            }
+        });
+    </script>
+    <footer class="footer">
+        <p> &copy; Ngamesh Raj Bhandari 2023</p>
+    </footer>
+</body>
+
+</html>

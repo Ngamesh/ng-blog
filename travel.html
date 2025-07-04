@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <link rel="stylesheet" href="ng.css">
+    <link rel="stylesheet" href="blog.css">
+</head>
+
+<body>
+    <!-- Header Section with navigation and logo -->
+    <header>
+        <a href="index.html" class="logo">Ng</a>
+        <nav class="top-nav" id="myTopnav">
+            <ul class="nav-links">
+                <li><a href="index.html">Me</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="photography.html">Photography</a></li>
+                <li><a href="#" class="active-nav">Travel</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Travel Blog Wall Section -->
+    <section id="travel-blog" class="wall"></section>
+
+    <!-- Shey Phoksundo Lake Section -->
+    <section id="shey" class="blog">
+
+        <div class="paragraph">
+            <h2>Shey Phoksundo Lake </h2><br>
+            <p>Embarking on an unforgettable adventure with my closest friends, we set our sights on the breathtaking
+                Shey Phoksundo Lake, nestled majestically at an altitude of 3,611 meters. Our journey to this ethereal
+                destination was a symphony of breathtaking landscapes, invigorating challenges, and cherished
+                camaraderie. As we ascended higher into the mountains, the air grew crisper, and the scenery transformed
+                into a panorama of unparalleled beauty. The turquoise expanse of Shey Phoksundo Lake unfolded before us,
+                its tranquil waters mirroring the towering peaks that embraced it. The journey was not without its
+                trials, as the altitude challenged our physical limits and the rugged terrain tested our determination.
+                Yet, with every step, we felt a profound connection to the land and to each other. The shared laughter,
+                the whispered stories around the campfire, and the quiet moments of reflection by the lakeshore created
+                an indelible tapestry of memories. As we gazed at the shimmering lake beneath a star-studded sky, we
+                realized that this journey was more than just a travel experience; it was a voyage of the heart, a
+                reminder of the beauty that exists both within us and in the world waiting to be explored.</p>
+
+        </div>
+        <img src="p/til.jpg" alt="Image 2" class="blog-img">
+    </section>
+
+    <!-- Tilicho Lake Section -->
+    <section id="tilicho" class="blog">
+        <div class="paragraph">
+            <h2>Tilicho lake</h2><br>
+            <p>The adventure of freezing at Tilicho Lake was a surreal experience that etched its way into the very core
+                of my being. Standing at an astounding altitude of 5,010 meters, I found myself in a world untouched by
+                the ordinary. The air was thin and crisp, carrying whispers of an ancient wilderness. The temperature, a
+                daunting -20 degrees Celsius, tested our resilience against the biting cold. Yet, despite the harsh
+                conditions, my companions and I embarked on a journey that was nothing short of remarkable. The
+                camaraderie among us transformed the freezing wilderness into a sanctuary of shared laughter and
+                unwavering support. Each step was a testament to our determination, a dance between frosty landscapes
+                and the warmth of friendship. The crystal-clear waters of Tilicho Lake, nestled amidst the snow-capped
+                peaks, mirrored the courage it took to conquer such an inhospitable terrain. As we huddled around
+                campfires, exchanged stories, and marveled at the starlit heavens above, the temperature seemed to fade
+                into insignificance against the radiance of the experience. The journey was not just an adventure; it
+                was a testament to human resilience, the power of unity, and the unwavering spirit that fuels our desire
+                to explore the uncharted realms of our world.</p>
+
+        </div>
+
+    </section>
+    <!-- Video Section -->
+    <section>
+        <div class="video">
+            <video controls autoplay loop>
+                <source src="p/til.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <!-- Fewa Lake Section -->
+    <section id="vocal" class="blog">
+
+        <div class="paragraph">
+            <h2>Fewa Lake</h2><br>
+            <p>The allure of Pokhara and the enchanting Fewa Lake is a tale of sheer wonder that left an indelible mark
+                on my soul. Nestled against the backdrop of the Annapurna mountain range, Pokhara's breathtaking beauty
+                is unmatched. The vibrant streets, adorned with bustling markets and quaint cafes, exude a charming
+                energy that's impossible to resist. But it's the serene Fewa Lake that steals the show, its mirrored
+                surface reflecting the towering peaks with an ethereal grace. As I glided across the tranquil waters,
+                surrounded by lush landscapes and a sense of serenity, time seemed to stand still. The vibrant hues of
+                the setting sun painting the sky with its fiery palette was a sight that defied words. From adventurous
+                paragliding escapades to leisurely strolls by the lakeside, Pokhara's embrace was both exhilarating and
+                soothing. It's a place where the natural world and human spirit harmonize in perfect symphony, where the
+                essence of Nepal's awe-inspiring beauty is woven into every breeze, every ripple, and every heartfelt
+                smile. The memories of Pokhara and Fewa Lake remain etched in my heart, a testament to the enchantment
+                that lingers in the air and the profound sense of peace that this sanctuary of nature imparts.</p>
+
+        </div>
+        <img src="p/t3.jpg" alt="Image 3" class="blog-img">
+    </section>
+
+    <!-- Suggest Your Destination Section -->
+    <section>
+        <div class="suggest">
+            <!-- Input field to suggest a destination -->
+            <input type="text" id="text-field" placeholder="your best destination to travel">
+            <!-- Button to submit the suggestion -->
+            <button id="submit-button">Submit</button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p> &copy; Ngamesh Raj Bhandari 2023</p>
+    </footer>
+
+    <!-- script for color change in navbar while scrolling -->
+    <script>
+        const header = document.querySelector('header');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 0) {
+                header.classList.add('scroll');
+            } else {
+                header.classList.remove('scroll');
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,436 @@
+/* Global reset and basic styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Styling for the body */
+body {
+  background-color: white;
+  min-height: 100vh;
+  margin: 0;
+}
+
+
+/* Header Styles */
+header {
+  background-color: black;
+  height: 5em;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+  transition: 0.6s;
+  padding: 40px 100px;
+  z-index: 100;
+  /*width: 100%;*/
+}
+
+/* Logo Styles */
+header .logo {
+  position: relative;
+  font-weight: 700;
+  color: #AAAAAA;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  transition: 0.6s;
+  padding-right: 5%;
+}
+
+/* Navigation Styles */
+header nav ul {
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav ul li {
+  position: sticky;
+  list-style: none;
+}
+
+header nav ul li a {
+  position: sticky;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #AAAAAA;
+  letter-spacing: 2px;
+  font-weight: 500px;
+
+
+}
+
+header nav ul li a:hover {
+  color: red;
+  text-shadow: rgba(248, 62, 62, 0.425) 1px 1px 5px;
+}
+
+header nav ul li a.active-nav {
+  color: red;
+
+}
+
+/* Scroll Effect for Header */
+header.scroll {
+  background-color: white;
+  color: black;
+
+}
+
+
+* {
+  box-sizing: border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 70%;
+  position: relative;
+  margin: auto;
+  padding-top: 0;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+
+
+
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #050505;
+  font-size: 60px;
+  text-decoration-line: #ffffff solid 1px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 20px;
+  left: 18%;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 2px;
+
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/* Section Styles */
+.section {
+  margin: 0 auto;
+  padding: 5% 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+  /* border-radius: 50px 50px -50px -50px; */
+  position: relative;
+  scroll-behavior: smooth;
+  height: 80vh;
+}
+
+
+/* Contact Icons Section Styles */
+.contact-icons {
+  margin: 0 auto;
+  padding: 5% 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  /* border-radius: 50px 50px -50px -50px; */
+  position: relative;
+  scroll-behavior: smooth;
+  transition: background-color 0.5s ease-in-out, transform 1s ease-in-out;
+  height: 10vh;
+}
+
+/* About Blog Styles */
+.about-blog {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 5% 3%;
+  flex: 1;
+  border-radius: 15px;
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1000px;
+  position: relative;
+  opacity: 6;
+  line-height: 30px;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+#music {
+  background-color: #eeeeee;
+}
+
+/* Music Content Container Styles */
+#music .content-container {
+  background-image: url(p/m3.JPG);
+  background-size: cover;
+  background-position: center center;
+}
+
+/* click for more Styles ... */
+.more {
+  bottom: 1%;
+}
+
+/* Photography Content Container Styles */
+#photography .content-container {
+  background-image: url(p/p.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Travel Section Styles */
+#travel {
+  background-color: #eeeeee;
+}
+
+/* Travel Content Container Styles */
+#travel .content-container {
+  background-image: url(p/t.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Section Heading 2 Styles */
+.section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  opacity: 1;
+  letter-spacing: 2px;
+}
+
+/* Content Container Styles */
+.content-container {
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.2);
+  padding: 5% 3%;
+  flex: 1;
+  border-radius: 25px;
+  height: 500px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1000px;
+  position: relative;
+  transition: 0.5s ease-in-out, transform 0.5s ease-in-out;
+
+}
+
+/* Content Container Hover Styles */
+.content-container:hover {
+  transform: scale(1.01);
+  box-shadow: #717171 5px 5px 30px;
+
+}
+
+/* Content-text Styles for music section */
+#music .content-text {
+  position: absolute;
+  z-index: 1;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.582);
+  top: 3%;
+  left: 17px;
+  width: 60%;
+  align-items: right;
+  line-height: 30px;
+  text-decoration: none;
+  padding: 10px;
+  letter-spacing: 1px;
+  color: black;
+  font-weight: 300;
+}
+
+/* Content-text Styles for photography section */
+#photography .content-text {
+  position: absolute;
+  z-index: 1;
+  font-weight: 200;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.651);
+  top: 5%;
+  left: 27px;
+  width: 45%;
+  align-items: right;
+  line-height: 27px;
+  text-decoration: none;
+  padding: 10px;
+  letter-spacing: 1px;
+}
+
+/* Content-text Styles for travel section */
+.content-text {
+  position: absolute;
+  z-index: 1;
+  border-radius: 10px;
+  background-color: rgba(255, 145, 41, 0.144);
+  top: 5%;
+  right: 50px;
+  width: 50%;
+  align-items: right;
+  line-height: 30px;
+  text-decoration: none;
+  padding: 10px;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+/* Content Text Link Styles */
+.content-text a {
+  color: red;
+  font-size: 17px;
+
+}
+
+.content-text a:hover {
+  color: black;
+
+}
+
+.content-img {
+  margin-left: 5%;
+  width: 50%;
+  height: auto;
+  border-radius: 20px;
+  display: block;
+}
+
+/* social icon style */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: transform 0.2s ease-in-out;
+  align-self: center;
+}
+
+#yt {
+  height: 40px;
+  width: 40px;
+  padding-right: -20px;
+}
+
+#insta {
+  height: 50px;
+  width: 50px;
+  /* margin-right: 25px; */
+}
+
+#vsco {
+  height: 40px;
+  width: 40px;
+}
+
+/* Social Icons Styles */
+.contact-icons h2 {
+  padding-right: 30;
+  padding-bottom: 5px;
+  letter-spacing: 3px;
+}
+
+/* Social Icons Hover Styles */
+.social-icons a:hover {
+  transform: scale(1.2);
+  box-shadow: none;
+}
+
+#vsco-link:hover {
+  transform: scale(1.2);
+  box-shadow: none;
+}
+
+/* Footer Styles */
+.footer {
+  color: black;
+  text-align: center;
+  font-weight: 50;
+
+  margin-bottom: 5px;
+  margin-top: 5px;
+  height: 30px;
+  align-items: center;
+
+}

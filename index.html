@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
+    <title>NG</title>
+    <!-- Link to external stylesheets -->
+    <link rel="stylesheet" href="ng.css">
+    <link rel="stylesheet" href="blog.css">
+</head>
+
+<body>
+    <!-- Logo and Navigation menu -->
+    <header>
+        <a href="#" class="logo">Ng</a>
+        <nav class="top-nav" id="myTopnav">
+            <ul class="nav-links">
+                <li><a href="#" class="active-nav">Me</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="photography.html">Photography</a></li>
+                <li><a href="travel.html">Travel</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <main>
+        <div>
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+
+                    <img src="p/t2.jpg" style="width:100%">
+                    <div class="text">Hi</div>
+                </div>
+
+                <div class="mySlides fade">
+
+                    <img src="p/2.jpg" style="width:100%">
+                    <div class="text" style="color:white;">Welcome</div>
+                </div>
+
+                <div class="mySlides fade">
+
+                    <img src="p/m4.jpg" style="width:100%">
+                    <div class="text">To My <br> Blog</div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+        </div>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+
+        <!-- About section -->
+        <section id="about" class="blog">
+
+            <div class="about-blog">
+                <h2>Personal Blog</h2><br>
+                <p>I am Ngamesh Raj Bhandari, but you can call me Ng. Welcome to my blog, a virtual gateway into my
+                    vibrant lifestyle. Here, I invite you to accompany me on a journey through the facets that define
+                    me. From the rhythm of music that resonates deep within my soul to the captivating world of
+                    photography that allows me to freeze cherished moments in time, and not to forget the thrill of
+                    traversing new horizons through travel — I'm thrilled to share my life's most treasured passions
+                    with you. Each post is an open window into my experiences, thoughts, and discoveries, as well as an
+                    opportunity for us to connect over shared interests. So, join me as we dive into the symphony of
+                    melodies, capture the beauty of the world through a lens, and embark on thrilling adventures that
+                    enrich the tapestry of our lives. <br> So, Let's explore.</p>
+
+            </div>
+            <img src="p/ng.jpg" alt="Image 2" class="blog-img">
+
+        </section>
+
+        <!-- Music section -->
+        <section id="music" class="section">
+
+            <div class="content-container">
+                <div class="content-text">
+                    <h2>Music</h2>
+                    <p>Music is the heartbeat of my existence, an enchanting journey that has woven its harmonious
+                        threads through every corner of my life. From the first moment I picked up guitar, the world
+                        transformed into a symphonic playground where melodies became my companions and rhythms my
+                        heartbeat. The path of learning music has been both challenging and incredibly rewarding. Each
+                        note I've mastered and every chord progression I've conquered has been a step forward in
+                        understanding the language that transcends words. With every strum of a guitar string or the
+                        delicate touch of piano keys, I've found solace, inspiration, and an avenue for self-expression.
+                    </p><br>
+                    <a href="music.html">click to explore my music </a>
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <!-- Photography section -->
+        <section id="photography" class="section">
+
+            <div class="content-container">
+                <div class="content-text">
+                    <h2>Photography</h2>
+                    <p>Photography has been my portal to a new way of seeing the world, one that goes beyond the
+                        ordinary and ventures into the realm of extraordinary perspectives. My journey into photography
+                        started as a curiosity, a desire to capture the fleeting moments that often go unnoticed. With
+                        my camera in hand, I embarked on a journey of exploration, learning to frame scenes, manipulate
+                        light, and freeze time itself. As I delved deeper, the world around me transformed. Ordinary
+                        landscapes became extraordinary vistas, and candid expressions turned into powerful stories.
+                        <br>
+                        <a href="photography.html">click to view my photo gallery</a>
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Travel section -->
+        <section id="travel" class="section">
+
+            <div class="content-container">
+                <div class="content-text">
+                    <h2>Travel</h2>
+                    <p>The call of adventure runs deep in my veins, and there's no greater joy than traversing the
+                        rugged landscapes of Nepal on foot. Trekking through the majestic mountains is not just a hobby;
+                        it's a profound passion that has etched unforgettable memories into my heart. Nepal's towering
+                        peaks, hidden valleys, and enchanting trails have become my sanctuary, offering an escape from
+                        the mundane into a world where every step is a gateway to awe-inspiring vistas. <br>
+                        <a href="travel.html">click to view my travel blog</a>
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+
+
+
+
+
+    <!-- header scroll scripts -->
+    <script>
+        const header = document.querySelector('header');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 0) {
+                header.classList.add('scroll');
+            } else {
+                header.classList.remove('scroll');
+            }
+        });
+    </script>
+
+    <!-- Slideshow scripts -->
+    <script>
+        let slideIndex = 1;
+        let slideInterval;
+
+        function showSlides(n) {
+            const slides = document.getElementsByClassName("mySlides");
+            const dots = document.getElementsByClassName("dot");
+
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                dots[i].classList.remove("active");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].classList.add("active");
+        }
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function startSlideshow() {
+            slideInterval = setInterval(() => {
+                plusSlides(1);
+            }, 2500); // Change slide every 4 seconds (adjust the time as needed)
+        }
+
+        function stopSlideshow() {
+            clearInterval(slideInterval);
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // Start the automatic slideshow when the page loads
+            startSlideshow();
+
+            // Add event listeners for the slideshow container
+            const slideshowContainer = document.querySelector(".slideshow-container");
+            slideshowContainer.addEventListener("mouseover", stopSlideshow);
+            slideshowContainer.addEventListener("mouseout", startSlideshow);
+
+            // Call showSlides initially to display the first slide
+            showSlides(slideIndex);
+        });
+    </script>
+
+    <!-- Social icons section -->
+    <section id="contact" class="contact-icons">
+        <h2>Reach Me Through</h2> <br>
+        <div class="social-icons">
+            <a href="https://www.youtube.com/channel/UC5M3AwSNxt90AfF_KtpedlA" target="_blank">
+                <img src="p/ytb.png" alt="Youtube" id="yt" title="YouTube - Ngamesh Raj Bhandari">
+            </a>
+            <a href="https://www.instagram.com/ngameshb/" target="_blank">
+                <img src="p/insta.png" alt="Instagram" id="insta" title="Instagram - Ng">
+            </a>
+            <a href="https://vsco.co/ngamesh/gallery" target="_blank">
+                <img src="p/vsco.png" alt="VSCO" id="vsco" title="VSCO - Ngamesh">
+            </a>
+        </div>
+    </section>
+    <!-- Footer section -->
+    <footer class="footer">
+        <p> &copy; Ngamesh Raj Bhandari 2023</p>
+    </footer>
+</body>
+
+
+
+</html>
